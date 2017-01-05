@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Suggestion Box</title>
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="public/css/style.css">
+	<link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/
+css/bootstrap.min.css" rel="stylesheet">
+
+	
+
+	<!--JavaScript dependencies -->
+	<script src="js/vendor/angular.min.js"></script>
+	<script src="js/vendor/angular-route.js"></script>
+
+
+
+</head>
+<body ng-app="SuggestionBox">
+
+<main id="site-main">
+	<div class="jumbotron">
+		<div class="container">
+			<div ng-view></div>
+		</div>
+	</div>
+</main>
+
+<!-- Modules -->
+<script src="js/app.js" type="text/javascript"></script>
+
+
+<!-- Controllers-->
+<script type="text/javascript" src="js/controllers/HomeController.js"></script>
+<script type="text/javascript" src="js/controllers/SuggestionController.js"></script>
+
+<!-- Services -->
+<script type="text/javascript" src="js/services/suggestions.js"></script>
+</body>
+</html>

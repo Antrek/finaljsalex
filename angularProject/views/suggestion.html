@@ -1,0 +1,19 @@
+<h2> {{post.title}} </h2>
+	<div ng-repeat="comment in post.comments | orderBy : '-upvotes'" >
+			<p> {{comment.title}} </p>
+			<p class="likes" ng-click="upVoteComment(comment)"> 
+				 +{{comment.upvotes}} 
+			</p>
+	</div>
+	<div class="row">
+
+<form ng-submit="addComment()" style="marging-top: 50px">
+	<h3>Submit your Comment</h3>
+	<div class="form-group">
+		<input type="text" class="form-control" placeholder="comment here" ng-model="title">
+		</input>
+	</div>
+	<button type="submit" class="btn btn-primary">Comment</button>
+</form>
+	
+
